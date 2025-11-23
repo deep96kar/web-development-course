@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .box {
+        height: 34px;
+        width: 34px;
+        margin: 34px;
+        padding: 34px;
+        border: 2px solid black;
+        cursor: pointer;
+      }
+    </style>
+    <div class="container">
+      <div class="box">box1</div>
+      <div class="box">box2</div>
+      <div class="box">box2.5</div>
+      <div class="box" id="box">box3</div>
+      <div class="box">box3.5</div>
+      <div class="box">box4</div>
+      <div class="box">box5</div>
+    </div>
+    <script>
+      // getElementsByClassName
+      let box1 = document.getElementsByClassName("box");
+      console.log(box1);
+      box1[2].style.backgroundColor = "red";
+
+      //   getElementById
+      document.getElementById("box").style.backgroundColor = "red";
+
+      //   querySelector
+      document.querySelector(".box").style.backgroundColor = "pink";
+
+      //   querySelectorAll
+      console.log(document.querySelectorAll(".box")); // nodelist return
+      //   document.querySelectorAll(".box").style.backgroundColor = "pink"; this is not work
+      document.querySelectorAll(".box").forEach((e) => {
+        // console.log(e)
+        e.style.backgroundColor = "pink";
+      });
+
+    
+      //   getElementsByTagName
+      console.log(document.getElementsByTagName("div"));
+      let e = document.getElementsByTagName("div");
+
+    //   matches
+      console.log(e[3].matches("#box"));
+      console.log(e[4].matches("#box"));//count in normal number means:-1,2,3,4 not to be 0,1,2,3,4 this is work
+    </script>
+  </body>
+</html>

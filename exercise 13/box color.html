@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      height: 50px;
+      width: 50px;
+      border: 2px solid black;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box">box1</div>
+      <div class="box">box2</div>
+      <div class="box">box3</div>
+      <div class="box">box4</div>
+      <div class="box">box5</div>
+    </div>
+  </body>
+  <script>
+    let boxes = document.querySelector(".container").children;
+    console.log(boxes);
+    function random_bg_color() {
+      let r = Math.floor(Math.random() * 256);
+      let g = Math.floor(Math.random() * 256);
+      let b = Math.floor(Math.random() * 256);
+      return `rgb(${r},${g},${b})`;
+    }
+    Array.from(boxes).forEach((e) => {
+      e.style.backgroundColor = random_bg_color();
+      e.style.color = random_bg_color();
+
+      console.log(e);
+    });
+  </script>
+</html>

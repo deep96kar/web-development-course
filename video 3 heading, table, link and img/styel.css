@@ -1,0 +1,11 @@
+td{
+    border: 2px solid black;
+    background-color:pink;
+    color: rgb(51, 34, 34);
+}
+img{
+    font-size: 60px;
+    font-family: 'Courier New';
+    font-style: italic;
+    font-weight: bold;
+}

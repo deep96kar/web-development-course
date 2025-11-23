@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    display: inline;
+    padding: 20px;
+}
+
+nav{
+    background-color: var(--primary-color);
+    padding: 12px 0px;
+    font-weight: bolder;
+   
+}
+
+ul li a{
+    color:var(--text-color);
+    text-decoration: none;
+}
+
+/* :root{
+    --primary-color:#d329cfd4;
+    --text-color:white ;
+    --secondary-color:#f2b1f1d4;
+} */
+
+:root{
+    --primary-color:#340d6fd4;
+    --text-color:white ;
+    --secondary-color:#b1b6f2d4;
+}
+
+
+body{
+    background-color: var(--secondary-color);
+}

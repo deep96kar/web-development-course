@@ -1,0 +1,10 @@
+body{
+    background-color: pink;
+    color: black;
+}
+a{
+    background-color: chartreuse;
+}
+a:hover{
+    background-color: orange;
+}

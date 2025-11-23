@@ -1,0 +1,1 @@
+alert("welcome bc and mc")

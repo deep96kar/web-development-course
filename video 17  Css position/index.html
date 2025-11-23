@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Css position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            padding: 58px;
+            margin: 3px;
+            height: 433px;
+            width: 80vw;
+        }
+
+        .box1 {
+            background-color: aqua;
+            position: sticky;
+            top: 0px;
+            height: 137px;
+            width: 101%;
+            margin: 0;
+            padding: 0;
+            align-content: center;
+            text-align: center;
+            /* position: absolute;
+        top: 0px;
+        left: 0px; */
+        }
+
+        .box2 {
+            background-color: antiquewhite;
+            /* top: 30px;
+        left: 30px;
+        position: relative; */
+        }
+
+        .box3 {
+            background-color: blue;
+           position: fixed;
+           top: 84px;
+           left: 1143px;
+           height: 125px;
+           width: 11%;
+           margin: 0;
+           padding: 0;
+          text-align: center;
+            align-content: center;
+        }
+
+        .box4 {
+            background-color: brown;
+       
+        }
+
+        .parent {
+            padding: 43px;
+            margin: 34px;
+            border: 2px solid purple;
+            position: relative;
+            
+            /* transfrom, filter, or perspective properties can also make an element appear as positioned */
+            /* position: relative; */
+            /* transfrom: translate(0); */
+            /* filter: invert(0); */
+            /* perspective: 0em; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class=" box box1">i am a sticky box</div>
+        <div class=" box box2"></div>
+        <div class=" box box3">i am a fixed box</div>
+        <div class=" box box4"></div>
+    </div>
+</body>
+
+</html>

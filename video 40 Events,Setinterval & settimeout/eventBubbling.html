@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .child {
+        background-color: aliceblue;
+        border: 2px solid black;
+        padding: 14px;
+        margin: 14px;
+        cursor: pointer;
+      }
+
+      .childcontainer {
+        background-color: aqua;
+        padding: 14px;
+        margin: 14px;
+      }
+
+      .container {
+        background-color: rgb(52, 207, 38);
+        padding: 14px;
+        margin: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="childcontainer">
+        <div class="child">i am a child</div>
+      </section>
+    </div>
+    <script>
+      document.querySelector(".child").addEventListener("click", (e) => {
+        e.stopPropagation();
+        alert("child was clicked");
+      });
+
+      document
+        .querySelector(".childcontainer")
+        .addEventListener("click", () => {
+          e.stopPropagation();
+          alert("child container was clicked");
+        });
+
+      document.querySelector(".container").addEventListener("click", () => {
+        alert("container was clicked");
+      });
+
+      //eta ekta random background color generater
+      function random_bg_color() {
+        let r = Math.floor(Math.random() * 256);
+        let g = Math.floor(Math.random() * 256);
+        let b = Math.floor(Math.random() * 256);
+        return `rgb(${r},${g},${b})`;
+      }
+      setTimeout(() => {
+        document.querySelector(".child").style.background = random_bg_color();
+      }, 2000); // settimeout:-ei ta bas ekbar run hobe ar noy
+      //2000 mane 2s por eta run korbe
+
+      setInterval(() => {
+        document.querySelector(".childcontainer").style.background =
+          random_bg_color();
+      }, 900); // setinterval:-ei unlimited bar run hobe
+
+      setInterval(() => {
+        document.querySelector(".container").style.background =
+          random_bg_color();
+      }, 900);
+    </script>
+  </body>
+</html>

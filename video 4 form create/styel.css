@@ -1,0 +1,17 @@
+body{
+    background-color: pink;
+    color: black;
+    
+}
+.box{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.box button{
+    height: 40px;
+    width: 96px;
+    font-size: 18px;
+}

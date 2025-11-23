@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Css selectors</title>
+    <style>
+    /* .box:first-child{
+    background-color: aqua;
+   } */
+
+/* 
+        .box::first-line {
+            color: red;
+        } */
+
+     /* .boxes *{
+    color: #0052ff;
+    border: 2px solid black;
+     }
+
+
+  p, a, .box,[data-color="Deep"]{
+    padding:45px ;
+    margin-top: 45px;
+} */
+
+
+
+    /* .box:nth-child(even){
+    background-color: brown;
+   } */
+
+   /* .box:nth-child(odd){
+    background-color: orange;
+   }  */
+
+
+   /* .box:nth-child(2){
+    background-color: brown;
+   }
+
+   .box:nth-child(3){
+    background-color: orange;
+   }  */
+
+   .boxes::before{
+    content: "Deep is good";
+    color: red;
+   }
+
+   .boxes::after{
+    content: "Sigma web dev opppp";
+    color: blue;
+   }
+
+
+   ::selection{
+    background-color: black;
+    color: aqua;
+   }
+
+
+   .box::first-letter{
+    color: peru;
+    font-size: 30px;
+   }
+
+
+input::placeholder{
+    color: rgb(55, 49, 49);
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="Deep" class="box">Hey i am a box</div>
+        <div class="box">Hey i am a box</div>
+        <div class="box">Hey i am a box</div>
+        <input type="text" placeholder="Type your name ">
+    </div>
+</body>
+
+</html>

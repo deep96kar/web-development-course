@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(97, 230, 97);
+}
+
+p {
+  font-size: 30px;
+  padding: 10px 0px;
+}
+
+.blink1 {
+  animation: blink1 1s linear infinite;
+}
+
+.blink2 {
+  animation: blink1 1.5s linear infinite;
+}
+
+.blink3 {
+  animation: blink1 2s linear infinite;
+}
+
+@keyframes blink1 {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink2 {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink3 {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.hidden {
+  display: none;
+}
+
+#finalMessage {
+  display: none;
+  color: red;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 20px;
+}

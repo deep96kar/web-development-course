@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css object fit and psition</title>
+    <style>
+        .container {
+            height: 488px;
+            width: 466px;
+            border: 2px solid black;
+            /* background-color: aqua; */
+            background-image: url("LMC_20240308_171404_🔥 iPhone 14 Ultra Pixel.jpg") ;
+            background-position:  center center;
+            background-size: 200px;
+            /* background-repeat:repeat-y; */
+            background-repeat: no-repeat ;
+        }
+
+        img {
+            width: 466px;
+            height: 488px;
+            /* object-fit: cover; */
+            object-fit: contain;
+            /* object-fit: fill; */
+            /* object-position: bottom right; */
+            /* object-position: 20px 40px ; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <img src="LMC_20240308_171404_🔥 iPhone 14 Ultra Pixel.jpg" alt="sunset"> -->
+    </div>
+</body>
+
+</html>

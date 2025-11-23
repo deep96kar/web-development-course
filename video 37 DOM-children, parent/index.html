@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box {
+      height: 45px;
+      width: 56px;
+      border: 2px solid black;
+      margin: 5px;
+      padding: 5px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box">box1</div>
+      <div class="box">box2</div>
+      <div class="box">box3</div>
+      <div class="box">box4</div>
+      <div class="box">box5</div>
+    </div>
+    <script>
+      console.log(document.body.childNodes);
+      let cont = document.body.childNodes[1];
+      console.log(cont); // container div
+      console.log(cont.firstChild); //text
+      console.log(cont.lastChild); //text
+      console.log(cont.firstElementChild); //box 1
+      console.log(cont.lastElementChild); //box 5
+      console.log(cont.lastElementChild.parentElement); //container div
+      console.log(
+        document.body.firstElementChild.children[1].nextElementSibling
+      ); //box 3
+      console.log(
+        document.body.firstElementChild.children[1].previousElementSibling
+      );//box 1
+      console.log(document.body.children[1]); // script all code
+    </script>
+  </body>
+</html>

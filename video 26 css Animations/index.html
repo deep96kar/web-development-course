@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Animations</title>
+    <style>
+        .contener {
+            background-color: rgb(247, 244, 50);
+            height: 80vh;
+            width: 30vw;
+        }
+
+        .box {
+            width: 34px;
+            height: 45px;
+            background-color: aqua;
+            /* animation-name: deepKaAnimation;
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(0.64, 0.08, 0.57, 0.94);
+             animation-delay: 1s;
+            /* animation-iteration-count: 5; */
+            /* animation-iteration-count: infinite; */ 
+            /* animation-direction: reverse;
+            animation-direction: alternate-reverse; */
+            /* animation-play-state: paused; */
+            /* animation: name duration timing-function delay iteration-count direction; */
+            animation: deepKaAnimation 1s cubic-bezier(0.64, 0.08, 0.57, 0.94) 1s infinite alternate-reverse;
+        }
+
+        @keyframes deepKaAnimation {
+            from {}
+
+            to {
+                transform: translateX(1000px);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contener">
+        <div class="box">Box</div>
+    </div>
+</body>
+
+</html>

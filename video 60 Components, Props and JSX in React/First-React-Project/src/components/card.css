@@ -1,0 +1,11 @@
+.card {
+  width: 22vw;
+  height: 10vh;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+}

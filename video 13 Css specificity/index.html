@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css specificity</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+
+        .cpurple{
+            color: purple;
+        }
+
+        .cred{
+            color: red;
+        }
+
+        .yellow{
+            color: green;
+        }
+        [data-x=a]{
+            color: orange;
+        }
+        .deep{
+            border: 2px solid black ;
+            padding: 10px;
+            margin: 7px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="cred cpurple yellow" data-x="a">css specificity</h1>
+        <img class="deep" height="200px" src="imagr.png" alt="deep">
+        <img class="deep" height="200px" src="img2.png" alt="">
+        <img class="deep" height="200px" src="img3.png" alt="">
+    </div>
+    
+</body>
+</html>

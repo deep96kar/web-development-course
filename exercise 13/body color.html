@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onload="random_bg_color()"></body>
+  <script>
+    function random_bg_color() {
+      let g = Math.floor(Math.random() * 256);
+      let b = Math.floor(Math.random() * 256);
+      let r = Math.floor(Math.random() * 256);
+      document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
+    }
+  </script>
+</html>
